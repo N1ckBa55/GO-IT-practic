@@ -1,0 +1,97 @@
+/* Using a sans serif font and increasing the size of the characters */
+body {
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px; text-decoration: none; font-weight: 500;
+}
+
+/* Shift the heading text to the left, by default it is centered */
+table caption {
+    text-align: left;
+}
+
+/* We "collapse" the frames of adjacent cells */
+table {
+    border-collapse: collapse;
+}
+p {color: rgb(127, 63, 187);
+font-size: 20px; background: #69cc51;}
+/* 
+  Add a border and padding to the cells, the distance from the content to the border.
+  To control the vertical position, the caption-side property is used.
+*/
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #c41414;
+}
+.span {color: rgb(182, 112, 21);
+font-family: Arial, Helvetica, sans-serif;
+font-size: x-large;}
+
+.accent {font-weight: 1000;
+    font-size: larger;
+    color: blueviolet;}
+
+.art {font-size: xx-large;
+    color: rgb(5, 165, 112);}
+
+.dd {color: #23c414;
+font-size: larger;}
+
+.abzats {height: 20px;}
+
+.adrs{color: rgb(0, 255, 179);
+background-color: #c41414;
+font-size: x-large;;}
+
+.vazno {font-size: 20px;
+font-weight: 1000;}
+
+.vazno2 {color: #23c414;}
+
+.vidau {color: #d0d312;
+font-size: 40px;
+background-color: #e2280f;}
+
+.vidauinf{color: #39e20f;
+font-size: 15px;}
+
+.aud {font-size: 30px;
+color: #07929c; background-color: #f3ef00;}
+
+#title {
+    font-weight: 500;
+    color: orange;
+}
+/* ❌ Застосується до всіх посилань у документі */
+a {
+    color: blue;
+    text-decoration: none; font-size: 20px;
+}
+
+/* ✅ Застосується тільки до посилань, які лежать всередині тегу з класом social-links */
+.social-links a {
+    color: blue;
+    text-decoration: none; font-size: 20px;
+}
+
+.menu>li {
+    border: 1px solid tomato;
+}
+
+a[title] {
+    color: teal;
+}
+
+/* Незвичне форматування фігурних дужок - це нормально */
+a[href="https://htmlreference.io"] {
+    color: teal;
+}
+
+a[href="https://cssreference.io"] {
+    color: orange;
+}
+
+a[href="https://www.youtube.com"] {
+    color: tomato;
+}

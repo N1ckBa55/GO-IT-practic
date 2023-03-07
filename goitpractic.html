@@ -12,7 +12,9 @@
 <body>
     <h2><a href="#all">All znaki</a></h2>
     <h2><a href="#aud">Audio</a></h2>
-    <a href="#title">стиль</a>
+    <h2><a href="#title">стиль</a></h2>
+    <h2><a href="#titlese">CSS</a></h2>
+    <h2><a href="#text-id">CSSer</a></h2>
 <!-- Абзац - це блоковий елемент -->
 <p>Блоковий елемент 1</p>
 <p>Блоковий елемент 2</p>
@@ -502,6 +504,189 @@ href і відповідним значенням.
     <li><a class="link" href="https://www.facebook.com">Facebook</a></li>
 </ul>
 
-    
+<table class="schedule">
+    <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Маршрут</th>
+            <th>Час у дорозі</th>
+        </tr>
+    </thead>
+
+    <tbody class="schedule-body">
+        <tr>
+            <td>433</td>
+            <td>Київ - Ковель</td>
+            <td>5 годин</td>
+        </tr>
+        <tr>
+            <td>701</td>
+            <td>Харків - Дніпро</td>
+            <td>7 годин</td>
+        </tr>
+        <tr>
+            <td>258</td>
+            <td>Львів - Одеса</td>
+            <td>4 годин</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h1><code>cursor</code> property values</h1>
+
+<div class="cursors">
+    <div class="auto">auto</div>
+    <div class="default">default</div>
+    <div class="none">none</div>
+    <div class="context-menu">context-menu</div>
+    <div class="help">help</div>
+    <div class="pointer">pointer</div>
+    <div class="progress">progress</div>
+    <div class="wait">wait</div>
+    <div class="cell">cell</div>
+    <div class="crosshair">crosshair</div>
+    <div class="text">text</div>
+    <div class="vertical-text">vertical-text</div>
+    <div class="alias">alias</div>
+    <div class="copy">copy</div>
+    <div class="move">move</div>
+    <div class="no-drop">no-drop</div>
+    <div class="not-allowed">not-allowed</div>
+    <div class="all-scroll">all-scroll</div>
+    <div class="col-resize">col-resize</div>
+    <div class="row-resize">row-resize</div>
+    <div class="n-resize">n-resize</div>
+    <div class="s-resize">s-resize</div>
+    <div class="e-resize">e-resize</div>
+    <div class="w-resize">w-resize</div>
+    <div class="ns-resize">ns-resize</div>
+    <div class="ew-resize">ew-resize</div>
+    <div class="ne-resize">ne-resize</div>
+    <div class="nw-resize">nw-resize</div>
+    <div class="se-resize">se-resize</div>
+    <div class="sw-resize">sw-resize</div>
+    <div class="nesw-resize">nesw-resize</div>
+    <div class="nwse-resize">nwse-resize</div>
+</div>
+
+
+<p class="text">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+    veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+    cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+<p class="tex">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+    veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+    cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+<article>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="">Читати далі...</a>
+</article>
+
+<!-- Селектори 3-го рангу -->
+<!-- Кожен селектор класу, атрибута і псевдокласу додає одиницю до третього рангу. -->
+
+<article class="post">
+    <h1 class="post-title">Lorem ipsum dolor sit amet</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="" class="post-link">Читати далі...</a>
+</article>
+
+<!-- Селектори 2-го рангу -->
+<!-- Кожен селектор ідентифікатора додає одиниць до другого рангу. -->
+
+<article class="post">
+    <h1 class="post-title" id="titlese">Lorem ipsum dolor sit amet</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="" class="post-link">Читати далі...</a>
+</article>
+
+
+<!-- Селектори 1-го рангу
+Вбудовані стилі додають одиницю до першого рангу, мають 
+найвищу специфічність, і їх неможливо перевизначити через CSS. -->
+
+<!-- Специфічність такого стилю - 1 0 0 0 -->
+<p style="color: green;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+    veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+    cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+
+<!-- Перший підхід - це присвоєння класу загальному блоку-батькові та використання селекторів дитини і нащадка. -->
+
+<article class="post">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="">Читати далі...</a>
+</article>
+
+<!-- Другий підхід - це додавання описових класів блоку-батькові і тегами всередині нього. -->
+
+<article class="post">
+    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a class="link" href="">Читати далі...</a>
+</article>
+
+<!-- Третій підхід полягає у встановленні дуже специфічних класів блоку-батькові та кожному тегу всередині нього за принципом -->
+<!-- імя_батька-імя_дитини. -->
+
+<!-- Ключове слово !important -->
+<!-- Специфічність правила можна підвищити за допомогою ключового слова !important, додавши його після значення властивості. -->
+
+<article class="post">
+    <h1 class="post-title">Lorem ipsum dolor sit amet</h1>
+    <p class="post-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="" class="post-link">Читати далі...</a>
+</article>
+
+<p class="text" id="text-id">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+    veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+    cumque fuga facere labore quo id necessitatibus quaerat rerum.
+</p>
+
+<article class="poster">
+    <h1>Популярне за цей місяць</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati commodi,
+        veritatis nihil alias iste odit similique sit eius optio veniam, impedit
+        cumque fuga facere labore quo id necessitatibus quaerat rerum.
+    </p>
+    <a href="">Читати далі...</a>
+</article>
+
 
 </body>

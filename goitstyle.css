@@ -1,7 +1,23 @@
 /* Using a sans serif font and increasing the size of the characters */
 body {
+    display: flex;
     font-family: 'Comic Neue', cursive;
     font-size: 15px; text-decoration: none; font-weight: 500;
+    flex-direction:column;
+    width: 1200px;
+    background-color: #fefeff;
+    margin: 40px auto;
+    box-shadow: 10px 10px 40px rgba(153, 28, 28, 0.1);
+}
+
+.main {padding: 100px 90px;
+    margin-bottom: 50px;
+    line-height: 24px;
+    background-color: #9496a7;
+}
+
+.headbody {
+    background-color: #502552;
 }
 
 /* Shift the heading text to the left, by default it is centered */
